@@ -288,22 +288,7 @@ section p {
   position: relative;
   overflow: hidden;
   box-shadow: 0 4px 15px rgba(39, 174, 96, 0.3);
-  display: inline-block;
-  white-space: nowrap;   /* prevent breaking into 2 lines */
-  max-width: 100%;       /* don’t overflow screen */
-  text-align: center;
 }
-
-/* Responsive fix for mobile */
-@media (max-width: 480px) {
-  .register-btn {
-    font-size: 0.9rem;     /* smaller text */
-    padding: 12px 18px;    /* reduce padding */
-    width: 100%;           /* make button full width */
-    white-space: normal;   /* allow wrapping if text too long */
-  }
-}
-
 
 .register-btn::before {
   content: '';
