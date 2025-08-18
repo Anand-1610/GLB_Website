@@ -288,7 +288,18 @@ section p {
   position: relative;
   overflow: hidden;
   box-shadow: 0 4px 15px rgba(39, 174, 96, 0.3);
+  display: inline-block; /* prevent breaking */
+  white-space: nowrap;   /* stop text wrapping */
 }
+
+/* Responsive adjustment for small screens */
+@media (max-width: 480px) {
+  .register-btn {
+    font-size: 0.9rem;   /* smaller text */
+    padding: 12px 20px;  /* reduce padding */
+  }
+}
+
 
 .register-btn::before {
   content: '';
