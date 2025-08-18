@@ -478,11 +478,29 @@ footer a:hover {
   overflow-x: auto;
   padding: 15px 10px;
   scroll-behavior: smooth;
-  scrollbar-width: none;
+
+  /* Show thin scrollbar */
+  scrollbar-width: thin;         /* Firefox */
+  scrollbar-color: #27ae60 #f1f1f1; /* thumb + track colors */
 }
 
+/* Chrome, Edge, Safari */
 .college-logos-horizontal::-webkit-scrollbar {
-  display: none;
+  height: 6px; /* thin scrollbar */
+}
+
+.college-logos-horizontal::-webkit-scrollbar-track {
+  background: #f1f1f1; /* light track */
+  border-radius: 10px;
+}
+
+.college-logos-horizontal::-webkit-scrollbar-thumb {
+  background: #27ae60; /* green thumb */
+  border-radius: 10px;
+}
+
+.college-logos-horizontal::-webkit-scrollbar-thumb:hover {
+  background: #229954; /* darker on hover */
 }
 
 .college-logo {
